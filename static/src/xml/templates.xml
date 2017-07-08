@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vim:fdl=1:
+-->
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="product" >
+        <t t-jquery=".js_check_product" t-operation="append">
+		<a id="return_home" class="btn btn-primary btn-lg mt8 js_return_home" href="#">Seguir Comprando</a>
+	</t>
+    </t>
+
+</templates>
