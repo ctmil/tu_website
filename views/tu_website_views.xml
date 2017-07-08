@@ -4,7 +4,13 @@
 
 	<template id="product_quantity" inherit_id="website_sale.product" customize_show="True" name="Select Quantity">
 	  <xpath expr="//a[@id='add_to_cart']" position="after">
-                    <a id="continue_shopping" class="btn btn-primary btn-lg mt8 js_continue_shopping a_submit" href="/shop/#">Seguir Comprando</a>
+                    <a id="continue_shopping" class="btn btn-primary btn-lg mt8 js_continue_shopping a_submit" href="/shop/#">Volver</a>
+	  </xpath>
+	</template>
+
+	<template id="layout" inherit_id="website.layout" name="Main layout">
+	  <xpath expr="//title" position="after">
+		<meta name="google-site-verification" content="k56pc43Rw-O02q-Jxv6kyPmt2cgdPwtUKiUX0A9Cn78" />
 	  </xpath>
 	</template>
 

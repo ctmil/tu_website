@@ -7,7 +7,7 @@
     'version': '1.0',
     'description': """website tupulperia""",
     'author': 'Moldeo Interactive - www.moldeo.coop',
-    'depends': ['website_sale'],
+    'depends': ['website','website_sale'],
     'data': [
         'views/tu_website_views.xml'
     ],
