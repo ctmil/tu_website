@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <template id="product" inherit_id="website_sale.product">
+            <xpath expr="//a[@class='btn btn-primary btn-lg mt8 js_check_product a-submit']" position="after">
+			<a id="return_home" class="btn btn-primary btn-lg mt8 js_return_home" href="#">Seguir Comprando</a>
+	    </xpath>
+	</template>
+
+    </data>
+</openerp>
