@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'sale tupulperia',
+    'name': 'website tupulperia',
     'category': 'Hidden',
-    'summary': 'sale tupulperia',
+    'summary': 'website tupulperia',
     'version': '1.0',
-    'description': """sales tupulperia""",
+    'description': """website tupulperia""",
     'author': 'Moldeo Interactive - www.moldeo.coop',
-    'depends': ['sale','product'],
+    'depends': ['website','website_sale','product'],
     'data': [
-        'views/tu_sale_views.xml'
+        'views/tu_website_view.xml'
     ],
     'qweb': [
+	'static/src/xml/templates.xml'
     ],
     'installable': True,
 }

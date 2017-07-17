@@ -10,12 +10,4 @@
     </t>
 
 
-        <template id="tu_assets" name="ab_pos_css" inherit_id="point_of_sale.index">
-            <xpath expr="//script[@id='loading-script']" position="before">
-                <link rel="stylesheet" href="/tu_website/static/src/css/tu_website.css"/>
-            </xpath>
-        </template>
-
-
-
 </templates>
