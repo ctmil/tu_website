@@ -2,6 +2,22 @@
 <openerp>
     <data>
 
+
+    <record model="ir.ui.view" id="product_template_form_view">
+        <field name="name">product.template.product.tu_website.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="website_sale.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <!-- add state field in header -->
+	    <field name="public_categ_ids" position="before">
+		    <field name="website_published_v2" />
+            </field>
+        </field>
+    </record>
+
+
+product_template_form_view
+
         <template id="tu_website_assets" name="tu_website_css" inherit_id="website.assets_frontend">
             <xpath expr="." position="inside">
                 <link rel="stylesheet" href="/tu_website/static/src/css/tu_website.css"/>
