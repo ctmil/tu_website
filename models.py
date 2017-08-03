@@ -12,12 +12,23 @@ import time
 from openerp.fields import Date as newdate
 from datetime import datetime,date,timedelta
 
+class payment_transaction(models.Model):
+        _inherit = 'payment.transaction'
+
+	@api.model
+	def create(self, vals):
+		vals['partner_country_id'] = 11
+        	res = super(payment_transaction, self).create(vals)
+        	return res
+
+
 class res_partner(models.Model):
         _inherit = 'res.partner'
 
 	@api.model
 	def create(self, vals):
 		vals['country_id'] = 11
+		vals['state_id'] = 98
         	res = super(res_partner, self).create(vals)
         	return res
 
