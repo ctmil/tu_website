@@ -12,6 +12,15 @@ import time
 from openerp.fields import Date as newdate
 from datetime import datetime,date,timedelta
 
+class res_partner(models.Model):
+        _inherit = 'res.partner'
+
+	@api.model
+	def create(self, vals):
+		vals['country_id'] = 11
+        	res = super(res_partner, self).create(vals)
+        	return res
+
 class product_template(models.Model):
         _inherit = 'product.template'
 
