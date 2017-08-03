@@ -17,7 +17,7 @@ class payment_transaction(models.Model):
 
 	@api.model
 	def create(self, vals):
-		vals['partner_country_id'] = 11
+		vals['partner_country_id'] = 255
         	res = super(payment_transaction, self).create(vals)
         	return res
 
@@ -27,7 +27,7 @@ class res_partner(models.Model):
 
 	@api.model
 	def create(self, vals):
-		vals['country_id'] = 11
+		vals['country_id'] = 255
 		vals['state_id'] = 98
         	res = super(res_partner, self).create(vals)
         	return res
