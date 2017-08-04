@@ -21,6 +21,9 @@ class payment_transaction(models.Model):
         	res = super(payment_transaction, self).create(vals)
         	return res
 
+	partner_country_id = fields.Many2one('res.country', 'Country', required=False)
+
+
 
 class res_partner(models.Model):
         _inherit = 'res.partner'
