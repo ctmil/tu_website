@@ -47,3 +47,7 @@ class product_template(models.Model):
 
 	website_published_v2 = fields.Boolean('Website Published')
 
+class res_country_state(models.Model):
+	_inherit = 'res.country.state'
+
+	active = fields.Boolean('Active',default=True)
